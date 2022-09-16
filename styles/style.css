@@ -1,0 +1,83 @@
+:root{
+    --work-grid-gap: 15px;
+    --work-grid-width: calc(23vw - var(--work-grid-gap));
+    --work-time-delay: 100ms;
+}
+html,
+body{
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none;
+}
+section{
+    display: grid;
+    place-items: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.work{
+    display: grid;
+    grid-template-columns: var(--work-grid-width) var(--work-grid-width) var(--work-grid-width) var(--work-grid-width);
+    column-gap: var(--work-grid-gap);
+    row-gap: var(--work-grid-gap);
+}
+img.works{
+    width: 100%;
+    height: auto;
+}
+.works:nth-child(2){
+    transition-delay: var(--work-time-delay);
+}
+.works:nth-child(3){
+    transition-delay: calc(var(--work-time-delay) * 2);
+}
+.works:nth-child(4){
+    transition-delay: calc(var(--work-time-delay) * 3);
+}
+.works:nth-child(5){
+    transition-delay: calc(var(--work-time-delay) * 4);
+}
+.works:nth-child(6){
+    transition-delay: calc(var(--work-time-delay) * 5);
+}
+.works:nth-child(7){
+    transition-delay: calc(var(--work-time-delay) * 6);
+}
+.works:nth-child(8){
+    transition-delay: calc(var(--work-time-delay) * 7);
+}
+@media screen and (max-width: 500px){
+    .work{
+        grid-template-columns: none;
+        overflow-y: scroll;
+    }
+    #photo{
+        display: none;
+    }
+    #p1{
+        grid-template-columns: none;
+    }
+    #intro{
+        background-image: url('https://static.vecteezy.com/packs/media/vectors/term-bg-1-666de2d9.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+#AboutMe{
+    max-width: 500px;
+    height: 90vh;
+}
+#MyWork{
+    padding: 5px;
+    margin: auto;
+    z-index: 1;
+    width: fit-content;
+}

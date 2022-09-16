@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!--
+            STYLE SHEET IMPORT
+
+            style.css             -> general styles
+            animations.css        -> styles of the animations for show and hide
+            background-images.css -> styles for the background images of each section
+            fonts.css             -> styles text
+        -->
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/animations.css">
+        <link rel="stylesheet" href="styles/background-images.css">
+        <link rel="stylesheet" href="styles/fonts.css">
+        <!--
+            SCRIPT IMPORT
+            
+            Defer is used to make the code run after everything is rendered
+        -->
+        <script defer src='app.js'></script>
+    </head>
+    <body>
+        <section id = 'p1'>
+            <div id = 'photo' class = 'hidden'>
+                <img src = 'https://static.vecteezy.com/packs/media/vectors/term-bg-1-666de2d9.jpg'/>
+            </div>
+            <div id = 'intro' class = 'hidden'>
+                <h1 class = 'hidden'>John Smith</h1>
+                <h2 class = 'hidden'>Living life fast while coding</h2>
+            <div>
+        </section>
+        <section id = 'p2'>
+            <div id = 'AboutMeBackground'>            
+                <div id = 'AboutMe' class =  'hidden'>
+                    <h1 class = 'hidden'>About me</h1>
+                    <p class = 'hidden'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class = 'p3'>
+            <video autoplay muted loop>
+                <source src="https://www.mbusa.com/content/dam/mb-nafta/us/amg/introduction/AMG_Loop_1000.mp4" type="video/mp4" />
+            </video>
+            <div id = 'MyWorkBackground'>
+                <div id = 'MyWork'>
+                    <h1 class = 'hidden title'>My work</h1>
+                    <div class = 'work hidden'>
+                        <div class = 'works hidden'>
+                            <img class = 'works' src = 'https://images.pexels.com/photos/112460/pexels-photo-112460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'/>
+                        </div>
+                        <div class = 'works hidden'>
+                            <img class = 'works' src = 'https://images.pexels.com/photos/112460/pexels-photo-112460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'/>
+                        </div>
+                        <div class = 'works hidden'>
+                            <img class = 'works' src = 'https://images.pexels.com/photos/112460/pexels-photo-112460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'/>
+                        </div>
+                        <div class = 'works hidden'>
+                            <img class = 'works' src = 'https://images.pexels.com/photos/112460/pexels-photo-112460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'/>
+                        </div>
+                        <div class = 'works hidden'>
+                            <img class = 'works' src = 'https://images.pexels.com/photos/112460/pexels-photo-112460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'/>
+                        </div>
+                        <div class = 'works hidden'>
+                            <img class = 'works' src = 'https://images.pexels.com/photos/112460/pexels-photo-112460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'/>
+                        </div>
+                        <div class = 'works hidden'>
+                            <img class = 'works' src = 'https://images.pexels.com/photos/112460/pexels-photo-112460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'/>
+                        </div>
+                        <div class = 'works hidden'>
+                            <img class = 'works' src = 'https://images.pexels.com/photos/112460/pexels-photo-112460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id = 'Contact' class = 'hidden'>
+            <div class = 'hidden'>
+                <h1 class = 'hidden'>Contact me</h1>
+                <h2 class = 'hidden'>Email: {{Your email}}<h2>
+            </div>
+        </section>
+    </body>
+</html>

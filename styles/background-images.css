@@ -1,0 +1,44 @@
+#p1{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url('images/p1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#p2{
+    background-image: url('images/p2.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+.p3 {
+    position: relative;
+}
+
+.p3 video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: 0;
+}
+#MyWorkBackground{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+#AboutMeBackground{
+    display: grid;    
+    place-items: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+
+}
+#Contact{
+    background-image: url('https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg');
+    background-repeat:no-repeat;
+    background-size: cover;
+}
