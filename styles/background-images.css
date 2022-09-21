@@ -1,12 +1,13 @@
-#p1{
+#slide1{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    background-image: url('images/p1.jpg');
+    background-image: url('https://images.pexels.com/photos/3274903/pexels-photo-3274903.jpeg?auto=compress');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
-#p2{
-    background-image: url('images/p2.jpg');
+#slide2{
+    background-image: url('https://images.pexels.com/photos/1476321/pexels-photo-1476321.jpeg?auto=compress');
     background-repeat:no-repeat;
     background-size: cover;
 }
@@ -37,8 +38,17 @@
     z-index: 1;
 
 }
-#Contact{
-    background-image: url('https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg');
+#slide4{
+    background-image: url('https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg?auto=compress');
     background-repeat:no-repeat;
     background-size: cover;
+}
+#ContactBackground{
+    display: grid;    
+    place-items: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }

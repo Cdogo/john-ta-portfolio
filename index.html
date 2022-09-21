@@ -25,7 +25,8 @@
         <script defer src='app.js'></script>
     </head>
     <body>
-        <section id = 'p1'>
+    <div id = 'fullpage'>
+        <section id = 'p1' data-anchor = 'slide1'>
             <div id = 'photo' class = 'hidden'>
                 <img src = 'https://static.vecteezy.com/packs/media/vectors/term-bg-1-666de2d9.jpg'/>
             </div>
@@ -34,7 +35,7 @@
                 <h2 class = 'hidden'>Living life fast while coding</h2>
             <div>
         </section>
-        <section id = 'p2'>
+        <section id = 'p2' data-anchor = 'slide2'>
             <div id = 'AboutMeBackground'>            
                 <div id = 'AboutMe' class =  'hidden'>
                     <h1 class = 'hidden'>About me</h1>
@@ -45,9 +46,9 @@
                 </div>
             </div>
         </section>
-        <section class = 'p3'>
+        <section class = 'p3' data-anchor = 'slide3'>
             <video autoplay muted loop>
-                <source src="https://www.mbusa.com/content/dam/mb-nafta/us/amg/introduction/AMG_Loop_1000.mp4" type="video/mp4" />
+                <source src="/styles/images/pexels-ojyrai-7727415.mp4" type="video/mp4" />
             </video>
             <div id = 'MyWorkBackground'>
                 <div id = 'MyWork'>
@@ -81,11 +82,15 @@
                 </div>
             </div>
         </section>
-        <section id = 'Contact' class = 'hidden'>
-            <div class = 'hidden'>
-                <h1 class = 'hidden'>Contact me</h1>
-                <h2 class = 'hidden'>Email: {{Your email}}<h2>
-            </div>
+        <section id = 'Contact' data-anchor = 'slide4'>
+            <div id = 'ContactBackground'>
+                <div class = 'hidden'>
+                    <h1 class = 'hidden'>Contact me</h1>
+                    <h2 class = 'hidden'>jtanaristy@gmail.com<h2>
+                </div>
+            </div>   
         </section>
+    </div>
+    <script src='https://unpkg.com/pageable@latest/dist/pageable.min.js'></script>
     </body>
 </html>
